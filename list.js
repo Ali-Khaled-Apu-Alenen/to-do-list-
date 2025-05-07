@@ -2,7 +2,7 @@ let button = document.querySelector(".addbutton");
 let orderdiv = document.querySelector(".task-list");
 let Olist = document.querySelector(".Olist");
 let text=document.querySelector(".writetext");
-let deletbutton = document.querySelector(".delete");
+let deletebutton = document.querySelector(".delete");
 let searchbutton = document.querySelector(".search");
 button.addEventListener("click", function () {
   if (text.value === "") {
@@ -16,7 +16,7 @@ button.addEventListener("click", function () {
   Olist.appendChild(li);
   text.value="";}
 });
-deletbutton.addEventListener("click", function () {
+deletebutton.addEventListener("click", function () {
   if (searchbutton.value === "") {
     alert("Please write something to delete a task.");
   }
