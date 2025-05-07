@@ -9,11 +9,11 @@
 
   <div>
     <div>
-      <input type="text" placeholder="Search tasks...">
+      <input class="search" type="text" placeholder="Search tasks...">
     </div>
     <div>
       <button>add</button>
-      <button>delete</button>
+      <button class="delete">delete</button>
     </div>
   </div>
 
@@ -31,11 +31,18 @@
       <input type="checkbox" checked>
     </div>
     <div>
-      <input type="text" placeholder="write anaything">
+      <input class="writetext" type="text" placeholder="write anaything">
       <input type="checkbox">
     </div>
-    <button>+ Add New Task</button>
+    <button class="addbutton">+ Add New Task</button>
   </div>
-  <div class="tast-list"></div>
+
+  <div class="tast-list">
+    <ol class="Olist">
+
+    </ol>
+  </div>
+
 </body>
+<script src="list.js"></script>
 </html>
