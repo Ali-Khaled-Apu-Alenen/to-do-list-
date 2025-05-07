@@ -2,7 +2,7 @@ let button = document.querySelector(".addbutton");
 let orderdiv = document.querySelector(".task-list");
 let Olist = document.querySelector(".Olist");
 let text=document.querySelector(".writetext");
-let deletebutton = document.querySelector(".deleten");
+let deletebutton = document.querySelector(".delete");
 let searchbutton = document.querySelector(".search");
 button.addEventListener("click", function () {
   if (text.value === "") {
@@ -22,6 +22,12 @@ deletebutton.addEventListener("click", function () {
   }
   
   else{
-
+    let listname=Olist.querySelectorAll("li");
+    listname.forEach(function (li) {
+      if (li.innerHTML === searchbutton.value) {
+        li.remove();
+        searchbutton.value = "";
+      }
+    });
 }});
 
